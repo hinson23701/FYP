@@ -2,9 +2,7 @@ package android.exercise.com.fyp;
 
 import android.graphics.RectF;
 
-/**
- * Created by ssaurel on 15/03/2018.
- */
+
 public class key {
 
     public int sound;

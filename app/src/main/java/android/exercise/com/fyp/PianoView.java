@@ -13,9 +13,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-/**
- * Created by ssaurel on 15/03/2018.
- */
+
 public class PianoView extends View {
 
     public static final int NB = 14;

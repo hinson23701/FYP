@@ -10,9 +10,7 @@ import android.util.SparseArray;
 
 import java.io.InputStream;
 
-/**
- * Created by ssaurel on 15/03/2018.
- */
+
 public class AudioSoundPlayer {
 
     private SparseArray<PlayThread> threadMap = null;
