@@ -41,8 +41,9 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="New Button1"
-                        android:id="@+id/button1" />
+                        android:text="Song ABC"
+                        android:id="@+id/button1"
+                        android:onClick="onClickplay"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
