@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class VideoActivity extends AppCompatActivity {
     // Your Video URL
-    String videoUrl = "https://www.youtube.com/watch?v=rygmygdEO3M";
+    String videoUrl = "https://video.link/w/tokGd";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
