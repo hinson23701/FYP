@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ChoosesongActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choosesong);
 

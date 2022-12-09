@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PianoActivity extends AppCompatActivity {
     private ImageView imagebyXML;
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_piano);
         imagebyXML = (ImageView)findViewById(R.id.image);
