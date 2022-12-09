@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/videoViewactivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_tut1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="tutorial 1"
+                >
+
+
+            </Button>
+        </ScrollView>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_weight="0.3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <!-- adding VideoView to the layout -->
@@ -13,4 +39,6 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true" />
 
+
 </RelativeLayout>
+</LinearLayout>

@@ -43,12 +43,13 @@
                         android:layout_height="wrap_content"
                         android:text="Song ABC"
                         android:id="@+id/button1"
-                        android:onClick="onClickplay"/>
+                        android:onClick="onClickplayabc"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="New Button2"
-                        android:id="@+id/button2" />
+                        android:id="@+id/button2"
+                        android:onClick="onClickplayode"/>
 
                     <Button
                         android:layout_width="wrap_content"

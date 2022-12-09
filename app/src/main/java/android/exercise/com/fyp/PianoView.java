@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class PianoView extends View {
 
     public static final int NB = 14;
-    private Paint black, yellow, white;
+    private Paint black, yellow, white,red,blue,purple,green;
     private ArrayList<key> whites = new ArrayList<>();
     private ArrayList<key> blacks = new ArrayList<>();
     private int keyWidth, height;
@@ -33,6 +33,12 @@ public class PianoView extends View {
         yellow = new Paint();
         yellow.setColor(Color.YELLOW);
         yellow.setStyle(Paint.Style.FILL);
+        red = new Paint();
+        red.setColor(Color.RED);
+        red.setStyle(Paint.Style.FILL);
+        blue = new Paint();
+        blue.setColor(Color.BLUE);
+        blue.setStyle(Paint.Style.FILL);
         soundPlayer = new AudioSoundPlayer(context);
     }
 
