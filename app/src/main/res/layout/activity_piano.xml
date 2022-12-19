@@ -75,7 +75,7 @@
             android:layout_alignTop="@id/pianoview"
             android:text="F"
             android:gravity="center"
-            android:layout_marginLeft="170dp"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="80dp"/>
         <TextView
             android:layout_width="25dp"
@@ -84,7 +84,52 @@
             android:layout_alignTop="@id/pianoview"
             android:text="G"
             android:gravity="center"
-            android:layout_marginLeft="225dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/deepblue_circle"
+            android:layout_alignTop="@id/pianoview"
+            android:text="A"
+            android:gravity="center"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/pink_circle"
+            android:layout_alignTop="@id/pianoview"
+            android:text="B"
+            android:gravity="center"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/red_circle"
+            android:layout_alignTop="@id/pianoview"
+            android:text="C"
+            android:gravity="center"
+            android:layout_marginLeft="365dp"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/orange_circle"
+            android:layout_alignTop="@id/pianoview"
+            android:text="D"
+            android:gravity="center"
+            android:layout_marginLeft="415dp"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/yellow"
+            android:layout_alignTop="@id/pianoview"
+            android:text="E"
+            android:gravity="center"
+            android:layout_marginLeft="465dp"
             android:layout_marginTop="80dp"/>
     </RelativeLayout>
 
