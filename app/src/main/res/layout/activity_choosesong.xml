@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     android:background="@drawable/piano"
     tools:context=".ChoosesongActivity">
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         tools:ignore="MissingConstraints">
@@ -17,10 +17,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Horizontal ScrollView Example"
+            android:text="Choose Song For Playing"
             android:id="@+id/textView"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="50dp"/>
 
 
         <LinearLayout
@@ -30,20 +32,24 @@
             >
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/horizontalScrollView">
+                android:layout_height="200dp"
+                android:id="@+id/horizontalScrollView"
+                android:layout_marginTop="80dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Song ABC"
+
+                    <ImageButton
                         android:id="@+id/button1"
-                        android:onClick="onClickplayabc"/>
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignTop="@id/horizontalScrollView"
+                        android:background="@drawable/abc_song"
+                        android:onClick="onClickplayabc"
+                        android:text="Song ABC" />
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

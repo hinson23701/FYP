@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -22,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         GamePlay = findViewById(R.id.btn_play);
         minigames = findViewById(R.id.btn_minigames);
         video = findViewById(R.id.btn_video);
+
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+
+        inflater.inflate(R.menu.my_options_menu, menu);
+
+        return true;
 
     }
     public void onClickplay(View view) {

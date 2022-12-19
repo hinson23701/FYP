@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Play Games"
+        android:icon="@drawable/ic_music"
 
         app:layout_constraintEnd_toEndOf="@+id/tv_aipiano"
         app:layout_constraintStart_toStartOf="@+id/tv_aipiano"

@@ -3,10 +3,12 @@ package android.exercise.com.fyp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ChoosesongActivity extends AppCompatActivity {
+    PianoActivity piano;
 
     protected void onCreate(Bundle savedInstanceState) {
         getSupportActionBar().hide();
@@ -24,5 +26,10 @@ public class ChoosesongActivity extends AppCompatActivity {
 
     public void onClickplayode(View view) {
         //to typo
+        Intent intent = new Intent(this, PianoActivity.class );
+        startActivity(intent);
+
     }
+
+
 }
