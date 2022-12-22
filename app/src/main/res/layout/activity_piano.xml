@@ -29,6 +29,17 @@
             android:layout_marginTop="105dp"
             android:src="@drawable/bar" />
 
+        <Button
+            android:id="@+id/btn_stoprecording"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+
+            android:layout_alignTop="@id/image"
+            android:layout_marginLeft="615dp"
+            android:layout_marginTop="45dp"
+            android:text="Stop" />
+
+
 
     </FrameLayout>
     <RelativeLayout
