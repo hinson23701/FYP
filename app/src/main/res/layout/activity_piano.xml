@@ -7,18 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <FrameLayout
         android:layout_weight="0.3"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/song_line"
-           />
+            android:src="@drawable/song_line" />
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="25dp"
@@ -26,7 +26,7 @@
 
             android:layout_alignTop="@id/image"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="125dp"
+            android:layout_marginTop="105dp"
             android:src="@drawable/bar" />
 
 
@@ -104,33 +104,76 @@
             android:gravity="center"
             android:layout_marginLeft="315dp"
             android:layout_marginTop="80dp"/>
+
         <TextView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="@drawable/red_circle"
             android:layout_alignTop="@id/pianoview"
-            android:text="C"
-            android:gravity="center"
             android:layout_marginLeft="365dp"
-            android:layout_marginTop="80dp"/>
+            android:layout_marginTop="80dp"
+            android:background="@drawable/red_circle"
+            android:gravity="center"
+            android:text="C" />
+
         <TextView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="@drawable/orange_circle"
             android:layout_alignTop="@id/pianoview"
-            android:text="D"
-            android:gravity="center"
             android:layout_marginLeft="415dp"
-            android:layout_marginTop="80dp"/>
+            android:layout_marginTop="80dp"
+            android:background="@drawable/orange_circle"
+            android:gravity="center"
+            android:text="D" />
+
         <TextView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="@drawable/yellow"
             android:layout_alignTop="@id/pianoview"
-            android:text="E"
-            android:gravity="center"
             android:layout_marginLeft="465dp"
-            android:layout_marginTop="80dp"/>
+            android:layout_marginTop="80dp"
+            android:background="@drawable/yellow"
+            android:gravity="center"
+            android:text="E" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@id/pianoview"
+            android:layout_marginLeft="515dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/green_circle"
+            android:gravity="center"
+            android:text="F" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@id/pianoview"
+            android:layout_marginLeft="565dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/blue_circle"
+            android:gravity="center"
+            android:text="G" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@id/pianoview"
+            android:layout_marginLeft="615dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/deepblue_circle"
+            android:gravity="center"
+            android:text="A" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@id/pianoview"
+            android:layout_marginLeft="665dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/pink_circle"
+            android:gravity="center"
+            android:text="B" />
     </RelativeLayout>
 
 </LinearLayout>

@@ -18,11 +18,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PianoActivity extends AppCompatActivity {
     private ImageView imagebyXML,bar;
+    Animation animSlide;
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -30,7 +32,7 @@ public class PianoActivity extends AppCompatActivity {
         imagebyXML = (ImageView)findViewById(R.id.image);
         bar= (ImageView)findViewById(R.id.imageView);
         // Load the animation like this
-        Animation animSlide = AnimationUtils.loadAnimation(getApplicationContext(),
+         animSlide = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.slide);
 
 // Start the animation like this
@@ -78,6 +80,34 @@ public class PianoActivity extends AppCompatActivity {
                 return true;
             case R.id.help:
                 // do something
+                return true;
+            case R.id.SongSpeed:
+                builder = new AlertDialog.Builder(this);
+                builder.setTitle("Please choose the song speed(bpm) for playing");
+                builder.setIcon(ic_music);
+                final String[] items = new String[]{"0.5", "normal", "1.25"};
+                builder.setSingleChoiceItems(items, 2, new DialogInterface.OnClickListener() {/*设置单选条件的点击事件*/
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(PianoActivity.this, items[which], Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(PianoActivity.this, "OK", Toast.LENGTH_SHORT).show();
+
+                        }
+
+                });
+                builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(PianoActivity.this, "CANCEL", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setCancelable(false);
+                builder.show();
                 return true;
             default:
                 return super.onContextItemSelected(item);
