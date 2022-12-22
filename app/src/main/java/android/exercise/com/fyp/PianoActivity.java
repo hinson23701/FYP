@@ -2,9 +2,11 @@ package android.exercise.com.fyp;
 
 import static android.exercise.com.fyp.R.drawable.*;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.graphics.RectF;
@@ -20,14 +22,20 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 public class PianoActivity extends AppCompatActivity {
     private ImageView imagebyXML,bar;
     Animation animSlide;
+    private boolean permissionToRecordAccepted = false;
+    private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
+    private String [] permissions = {Manifest.permission.RECORD_AUDIO};
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
         setContentView(R.layout.activity_piano);
         imagebyXML = (ImageView)findViewById(R.id.image);
         bar= (ImageView)findViewById(R.id.imageView);
@@ -37,6 +45,17 @@ public class PianoActivity extends AppCompatActivity {
 
 // Start the animation like this
         bar.startAnimation(animSlide);
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode){
+            case REQUEST_RECORD_AUDIO_PERMISSION:
+                permissionToRecordAccepted  = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                break;
+        }
+        if (!permissionToRecordAccepted ) finish();
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -112,6 +131,7 @@ public class PianoActivity extends AppCompatActivity {
             default:
                 return super.onContextItemSelected(item);
         }
+
     }
     public void changeimage() {
         imagebyXML = (ImageView)findViewById(R.id.image);
